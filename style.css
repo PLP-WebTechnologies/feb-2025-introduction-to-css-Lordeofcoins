@@ -1,0 +1,53 @@
+/* Element Selector */
+body {
+    font-family: 'Roboto', sans-serif; /* Using Google Fonts */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ID Selector */
+#main-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Class Selector */
+.intro-text {
+    font-size: 1.2rem;
+    color: #34495e;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+/* Styling the image */
+.styled-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling with hover effect */
+.cta-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}

@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Information Section */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info .content {
+    flex: 1;
+}
+
+.info img {
+    flex: 1;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+}
